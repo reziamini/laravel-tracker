@@ -1,0 +1,38 @@
+{
+    "name": "rezaamini-ir/laravel-tracker",
+    "license": "MIT",
+    "description": "Track your data in project",
+    "authors": [
+        {
+            "name": "Reza Amini",
+            "email": "rezaaminiroyal@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "laravel/framework": "^6.0|^7.0|^8.0",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.7|^4.0|^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tracker\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TrackerTest\\" : "tests/"
+        }
+    },
+    "extra": {
+        "laravel" : {
+            "providers" : [
+                "Tracker\\TrackerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
