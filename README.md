@@ -25,7 +25,7 @@ To use from package you must use from tracker trait in model which you want to t
 use Tracker\Traits\Trackable;
 
 class Article extends Model{
-    use Trackabe;
+    use Trackable;
 }
 ```
 Now you can use `track()` method to track in your Article Single page controller 
